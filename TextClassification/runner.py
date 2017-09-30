@@ -2,7 +2,7 @@ from sklearn.externals import joblib
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 vectorizer = joblib.load('./vectorizer.pkl')
-clf = joblib.load('./MultinomialNB.pkl')
+clf = joblib.load('./models/MultinomialNB.pkl')
 categories = joblib.load('./categories.pkl')
 
 def predict(text):  
